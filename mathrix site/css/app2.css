@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Quantico);
+
+html {
+    -webkit-text-stroke: 0.25px;
+}
+
+body {
+    color: #2d2d2d;
+    font-weight: 300;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+
+
+/* Sidebar
+-------------------*/
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 50px;
+    background-color: #2E2E2E;
+    z-index: 2;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    font-family: 'Quantico', sans-serif;
+}
+
+.expended #sidebar {
+    width: 120px;
+}
+
+#sidebar .toggle-expend {
+    display: inline-block;
+    margin: 30px 12px;
+    font-size: 2em;
+    color: #f1f1f1;
+    cursor:pointer;
+    opacity: .4;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+#sidebar .toggle-expend:hover {
+    opacity: 1;
+}
+
+#sidebar a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+#sidebar a:hover, a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Menu Sidebar
+---------------------*/
+
+#nav ul {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    overflow: hidden;
+    color : #f1f1f1;
+    display: inline-block;
+    line-height: 22px;
+    padding: 14px 0 8px 8px;
+    text-transform: uppercase;
+    width: 70%;
+    opacity: .4;
+    font-size: .9em;
+    white-space: nowrap;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+
+}
+
+#nav ul li.active, #nav ul li:hover, #nav ul li:focus {
+    opacity: 1;
+}
+
+.expended #nav ul li {
+    width: 90%;
+}
+
+#nav li span {
+    display: inline-block;
+    height: 0;
+    width: 0px;
+    padding-left: 10px;
+    overflow: hidden;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.expended #nav li span {
+    overflow: visible;
+    height: auto;
+    width: 110px;
+}
+
